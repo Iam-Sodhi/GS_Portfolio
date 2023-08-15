@@ -20,7 +20,7 @@ export default function Intro() {
            }}
           >
             <Image
-              src="/profilephoto.png"
+              src="/profilephoto.JPG"
               alt="Profile photo"
               width="192"
               height="192"
@@ -47,9 +47,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Gautam.</span> I'm a{" "}
+        <span className="font-bold">Hello, I'm Gautam Sodhi.</span> I'm a{" "}
         <span className="font-bold">B.Tech CSE</span> student at NIT, Jalandhar, specializing in {" "}
-        <span className="font-bold">Web Development & Programming.</span> Fascinated by emerging technologies, I am particularly drawn to{" "} 
+        <span className="font-bold">Web Development & Programming.
+        </span> 
+        I am particularly drawn to{" "} 
         <span className="italic underline">Web 3 & blockchain.</span>
       </motion.h1>
 
