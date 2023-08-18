@@ -21,7 +21,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
       </head>
 
-      <body className={`${inter.className} bg-gray-50  text-gray-950 relative h-[5000px] pt-28 sm:pt-36 `}>
+      <body className={`${inter.className} bg-gray-50  text-gray-950 relative  pt-28 sm:pt-36 `}>
 
 
  {/* <div className="absolute top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] bg-gradient-to-r from-[#F472B6] to-[#60A5FA] dark:from-[#B91C1C] dark:to-[#059669]"></div>

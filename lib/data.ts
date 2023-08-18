@@ -39,6 +39,7 @@ export const experiencesData = [
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
+    //it is ts file not tsx file hence we can' use icon: <LuGraduationCap />
     date: "2019",
   },
   {
