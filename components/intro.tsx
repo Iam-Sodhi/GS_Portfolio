@@ -6,9 +6,24 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
+
+
+
 export default function Intro() {
+  // const {ref,inView}=useInView( {
+  //   threshold: 0.5, //0.5 as it's a bigger section
+  // });
+  // const {setActiveSection , timeOfLastClick}=useActiveSectionContext();
+  // useEffect(()=>{    //useEffect is used when you want to synchronize with the external system
+  //   if(inView && Date.now()-timeOfLastClick>1000){
+  //     setActiveSection("Home");
+  //   }
+  // },[inView,setActiveSection, timeOfLastClick]);  //run when inView gets changed (or setActiveSection )
+const {ref}=useSectionInView("Home");
+
   return (
-    <section  className="mb-28 -mt-8 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
+    <section ref={ref} id="home" className="mb-28 -mt-4 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div

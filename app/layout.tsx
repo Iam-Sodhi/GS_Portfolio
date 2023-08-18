@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "@/components/header";
+import ActiveSectionContextProvider from "@/context/activeSection-context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -15,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
       </head>
@@ -34,8 +35,10 @@ export default function RootLayout({
 
 <div className="absolute -z-10 top-[-1rem] left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] bg-gradient-to-r from-orange-200 to-yellow-300 dark:from-orange-300 dark:to-yellow-400"></div>
 
-      <Header />
-        {children}
+  <ActiveSectionContextProvider>
+    <Header />
+     {children}
+  </ActiveSectionContextProvider>
       </body>
     </html>
   );
