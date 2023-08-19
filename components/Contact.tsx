@@ -25,7 +25,7 @@ export default function Contact() {
       viewport={{once: true}}
     >
       <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:gautamsodhi88@gmail.com">
           gautamsodhi@gmail.com
@@ -41,10 +41,10 @@ export default function Contact() {
        }
        toast.success("Email sent successfully!");
 
-     }} className="mt-10 flex flex-col ">
+     }} className="mt-10 flex flex-col dark:text-black">
         {/* to use function in action you also need to modify next.congig.js file */}
         <input
-          className="h-14 rounded-lg borderBlack px-4"
+          className="h-14 rounded-lg borderBlack px-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
           required
@@ -52,7 +52,7 @@ export default function Contact() {
           placeholder="Your Email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 "
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Your Message"
           maxLength={5000}
