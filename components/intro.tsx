@@ -60,7 +60,7 @@ const {setActiveSection,setTimeOfLastClick}=useActiveSectionContext();
         <span className="font-bold">Web Development & Programming.
         </span> 
         I am currently drawn to{" "} 
-        <span className="italic underline">Devops.</span>
+        <span className="italic underline">DevOps.</span>
       </motion.h1>
 
       <motion.div

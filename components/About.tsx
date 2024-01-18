@@ -35,7 +35,7 @@ export default function About() {
         </span>
         . Currently, I am enthusiastic
         about{" "}
-        <span className="font-medium">Devops.</span>
+        <span className="font-medium">DevOps.</span>
       </p>
       <p></p>
     </motion.section>
