@@ -12,15 +12,7 @@ import { useActiveSectionContext } from "@/context/activeSection-context";
 
 
 export default function Intro() {
-  // const {ref,inView}=useInView( {
-  //   threshold: 0.5, //0.5 as it's a bigger section
-  // });
-  // const {setActiveSection , timeOfLastClick}=useActiveSectionContext();
-  // useEffect(()=>{    //useEffect is used when you want to synchronize with the external system
-  //   if(inView && Date.now()-timeOfLastClick>1000){
-  //     setActiveSection("Home");
-  //   }
-  // },[inView,setActiveSection, timeOfLastClick]);  //run when inView gets changed (or setActiveSection )
+   
 const {ref}=useSectionInView("Home");
 const {setActiveSection,setTimeOfLastClick}=useActiveSectionContext();
   return (
@@ -64,11 +56,11 @@ const {setActiveSection,setTimeOfLastClick}=useActiveSectionContext();
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Gautam Sodhi.</span> I'm a{" "}
-        <span className="font-bold">B.Tech CSE</span> student at NIT, Jalandhar, specializing in {" "}
+        <span className="font-bold">B.Tech CSE</span> student at NIT Jalandhar, specializing in {" "}
         <span className="font-bold">Web Development & Programming.
         </span> 
-        I am particularly drawn to{" "} 
-        <span className="italic underline">Web 3 & blockchain.</span>
+        I am currently drawn to{" "} 
+        <span className="italic underline">Devops.</span>
       </motion.h1>
 
       <motion.div
@@ -94,7 +86,7 @@ const {setActiveSection,setTimeOfLastClick}=useActiveSectionContext();
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 "
-          href="/CV.pdf"
+          href="/Resume.pdf"
           download
         >
           Download CV{" "}
