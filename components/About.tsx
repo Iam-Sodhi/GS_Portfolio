@@ -31,11 +31,11 @@ export default function About() {
         continuously honing my problem-solving skills and algorithmic thinking.
         My core stack is{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          React, Next.js, Node.js, Typescript , Prisma and MongoDB.
         </span>
-        . I am also familiar with TypeScript. Additionally, I am enthusiastic
+        . Currently, I am enthusiastic
         about{" "}
-        <span className="font-medium">Web 3 and blockchain innovation.</span>
+        <span className="font-medium">Devops.</span>
       </p>
       <p></p>
     </motion.section>

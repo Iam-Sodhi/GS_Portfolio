@@ -2,8 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import teamApp from "@/public/teamApp.png"
+import CodersRealm from "@/public/CodersRealm.png"
 import chatMate from "@/public/chatMate.png"
+import musicLibrary from "@/public/musicLibrary.png"
 import GS_amazon from "@/public/GS_amazon.png"
 export const links = [
   {
@@ -55,19 +56,30 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
-  {
-    title: "TeamApp",
-    description:
-      "TeamApp is a file sharing and collaboration Figma UI/UX design. Currently deployed on Webflow.",
-    tags: ["Figma", "Webflow", "UI/UX", "Responsive"],
-    imageUrl:teamApp,
-  },
+
   {
     title: "ChatMate",
     description:
-      "A chat app design to provide a fun and easy way to connect with friends, family, and new people from all over the world. Also deployed on Webflow.",
-    tags: ["Figma", "Webflow", "UI/UX", "Responsive"],
+      "This is a realtime chat application with features of one-to-one video callings, chattings and other discord like features.",
+    tags: ["Next.js", "Typescript", "Socket.io", "Prisma","Tailwind CSS", "MySQL"],
     imageUrl: chatMate,
+    url:"https://chatmate-gsodhi.vercel.app/"
+  },
+  {
+    title: "CodersRealm",
+    description:
+      "This is a coding platform that is like a leetcode clone using Firebase for authentication and database.",
+    tags: ["Next.js", "Tailwind CSS", "Firebase", "Typescript"],
+    imageUrl:CodersRealm,
+    url:"https://coders-realm.vercel.app/"
+  },
+  {
+    title: "Music Player",
+    description:
+      "A group OOPS project where you immerse yourself in an enhanced music experience, managing playlists and enjoying a visualizer for each track.",
+    tags: ["C++", "OOPS", "SFML GUI"],
+    imageUrl: musicLibrary,
+    url:"https://github.com/Iam-Sodhi/Music-Player"
   },
   {
     title: "GS_Amazon",
@@ -75,6 +87,7 @@ export const projectsData = [
       "Amazon clone with the basic features like Authentication,Card Payment using Stripe, Add to Cart & Orders Options.",
     tags: ["React", "Firebase", "CSS", "Authentication" , "Stripe"],
     imageUrl: GS_amazon,
+    url:"https://amazon-gs.onrender.com/"
   },
 ] as const;
 
